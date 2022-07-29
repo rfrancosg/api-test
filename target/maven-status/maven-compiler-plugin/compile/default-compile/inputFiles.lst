@@ -1,0 +1,13 @@
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/repositories/CustomerRepository.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/models/entities/Customer.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/utils/S3Util.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/utils/Constants.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/repositories/GenericRepository.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/services/interfaces/UserService.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/repositories/UserRepository.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/services/implementations/UserServiceImpl.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/models/entities/User.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/ApiTestApplication.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/models/test.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/controllers/AdminController.java
+/Users/raulfrancos/Documents/own/Uoc/TFG/api-test/src/main/java/com/monkeys/api_test/controllers/UserController.java
