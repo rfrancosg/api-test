@@ -16,6 +16,7 @@
                     "constraints":
                     {
                       "primaryKey": true,
+                      "primaryKeyName": "pk_customer",
                       "nullable": false,
                       "unique": true
                     }
@@ -45,7 +46,7 @@
                 },{
                   "column":
                   {
-                    "name": "photoUrl",
+                    "name": "photo_url",
                     "type": "varchar(100)",
                     "constraints":
                     {
@@ -56,8 +57,8 @@
                 {
                   "column":
                   {
-                    "name": "createdBy",
-                    "type": "BIGINT",
+                    "name": "created_by",
+                    "type": "uuid",
                     "constraints":
                     {
                       "nullable": false
@@ -67,8 +68,8 @@
                 {
                   "column":
                   {
-                    "name": "lastUpdatedBy",
-                    "type": "BIGINT",
+                    "name": "last_updated_by",
+                    "type": "uuid",
                     "constraints":
                     {
                       "nullable": false
@@ -76,9 +77,94 @@
                   }
                 }
               ],
-              "tableName": "customer"
+              "tableName": "customers"
             }
           }]
       }
-    }]
+    }, {
+      "changeSet": {
+        "id": "2",
+        "author": "raul.francos",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column":
+                  {
+                    "name": "id",
+                    "type": "uuid",
+                    "constraints":
+                    {
+                      "primaryKey": true,
+                      "primaryKeyName": "pk_user",
+                      "nullable": false,
+                      "unique": true
+                    }
+                  }
+                },
+                {
+                  "column":
+                  {
+                    "name": "name",
+                    "type": "varchar(30)",
+                    "constraints":
+                    {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column":
+                  {
+                    "name": "surname",
+                    "type": "varchar(50)",
+                    "constraints":
+                    {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column":
+                  {
+                    "name": "email",
+                    "type": "varchar(50)",
+                    "constraints":
+                    {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column":
+                  {
+                    "name": "password",
+                    "type": "varchar(100)",
+                    "constraints":
+                    {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column":
+                  {
+                    "name": "is_admin",
+                    "type": "bit",
+                    "defaultValue": 0,
+                    "constraints":
+                    {
+                      "nullable": false
+                    }
+                  }
+                }
+              ],
+              "tableName": "users"
+            }
+          }]
+      }
+    }
+  ]
 }
+
