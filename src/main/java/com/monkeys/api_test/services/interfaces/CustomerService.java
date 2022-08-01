@@ -24,18 +24,19 @@ public interface CustomerService {
     CustomerDto getCustomerById(UUID id) throws CustomerNotFoundException;
 
     /**
-     * Creates a customer
+     * creates a customer
      * @param customerDto
-     * @param createdBy
      * @return
+     * @throws AttributeNotPresentException
      */
     CustomerDto createCustomer(CustomerDto customerDto) throws AttributeNotPresentException;
 
     /**
      * updates a customer
      * @param customerDto
-     * @param updatedBy
      * @return
+     * @throws AttributeNotPresentException
+     * @throws CustomerNotFoundException
      */
     CustomerDto updateCustomer(CustomerDto customerDto) throws AttributeNotPresentException, CustomerNotFoundException;
 

@@ -6,5 +6,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 public interface LoginService extends UserDetailsService {
 
+    /**
+     * Login
+     * @param loginDto
+     * @return
+     * @throws Exception
+     */
     UserDto login(LoginDto loginDto) throws Exception;
 }
